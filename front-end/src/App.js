@@ -24,6 +24,7 @@ import MenuUser from "./components/menu-usuario.component";
 import EditTodoDirec from "./components/direcedit-access";  
 import ListaPorteiro from "./components/lista-acessos-porteiro";
 import logo from "./logo.png";
+import NavBar from "./components/navbar/newNavbar"
 
 class App extends Component {
   render() {
@@ -76,6 +77,7 @@ class App extends Component {
           <Route path="/criaracesso" component={CriarAcesso} /> 
           <Route path="/acessosaceitos" component={AcessosAceitos} /> 
           <Route path="/acessosrejeitados" component={AcessosRejeitados} /> 
+          <Route path="/user" component={NavBar} /> 
              
           
         </div>
