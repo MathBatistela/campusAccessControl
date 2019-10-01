@@ -30,9 +30,9 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div className="container">
+        <div>
           
-          <nav className="navbar navbar-expand-lg navbar-light bg-light">
+          {/* <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <a className="navbar-brand" href="/">
               <img src={logo} width="300" height="100" alt="CampusAccessControlHome" />
             </a>
@@ -57,10 +57,10 @@ class App extends Component {
                 </li>
                <li className="navbar-item">
                   <Link to="/accesslist" className="nav-link">Lista de acessos</Link>
-                </li> */}
+                </li> }
               </ul>
             </div>
-          </nav>
+          </nav> */}
 
           <Route path="/" exact component={Index} /> 
           <Route path="/todoslist" exact component={TodosList} />
