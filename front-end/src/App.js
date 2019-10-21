@@ -47,6 +47,7 @@ class App extends Component {
           <Route path="/criaracesso" component={CriarAcesso} /> 
           <Route path="/acessosaceitos" component={AcessosAceitos} /> 
           <Route path="/acessosrejeitados" component={AcessosRejeitados} />   
+          <Route path="/navbar" component={NavBar} />   
           
         </div>
       </Router>

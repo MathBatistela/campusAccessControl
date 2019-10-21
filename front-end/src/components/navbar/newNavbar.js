@@ -13,7 +13,8 @@ export default class NavBar extends Component {
         return (
             <Layout className="layout">
                  
-            <Header>
+            <Header                     style={{ lineHeight: '64px' ,backgroundColor:'#555555' }}
+>
 
                 <div className="logo">
                     <img src= {logo}  alt="logo" style={{float:'left', padding:8}}/>
@@ -23,20 +24,26 @@ export default class NavBar extends Component {
                     theme="dark"
                     mode="horizontal"
                     defaultSelectedKeys={['1']}
-                    style={{ lineHeight: '64px' , }}
+                    style={{ lineHeight: '64px' ,backgroundColor:'#555555' }}
                 >
                     
-                    <Menu.Item key="1">Acessos</Menu.Item>
+                    <Menu.Item key="1" style={{backgroundColor:'#596061'}}>Acessos</Menu.Item>
                     <Button style={{float: 'right'}} type="link" shape="circle" ghost size="large" icon="logout">
                     </Button>
                 </Menu>
             </Header>
             <Content style={{ padding: '0 50px' }}>
+                
         
-            <div style={{ background: '#fff', padding: 24, minHeight: 280 }}>Content</div>
+            <div style={{ background: '#fff', padding: 24, minHeight: 900 }}>Content</div>
             </Content>
-            <Footer style={{ textAlign: 'center' }}></Footer>
+            <Footer style={{ textAlign: 'center' }}>
+            <div className="logo">
+                    <img src= {logo}  alt="logo" style={{float:'center', padding:8}}/> 
+                </div>
+            </Footer>
         </Layout>
+        
         )
         
     }
