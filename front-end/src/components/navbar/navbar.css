@@ -14,7 +14,7 @@
 }
 
 .logo img {
-  max-height: 50px;
+  max-height: 80px;
   max-width: 100%;
 }
 
@@ -31,10 +31,11 @@
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   background: #ff8d00;
-  -webkit-box-shadow: 0 2px 8px #ff8d00;
-  box-shadow: 0 2px 8px #ff8d00;
+  -webkit-box-shadow: 0 2px 8px #FECC00;
+  box-shadow: 0 2px 8px rgb(150, 150, 150);
   z-index: 10;
   width: 100%;
+  min-height: 80px;
 }
 
 @media only screen and (max-width: 850px) {
@@ -87,12 +88,25 @@
 
 .ant-dropdown-menu-item-active {
   background: #ff8d0052 !important;
-  color: #ff8d00 !important;
+  color: #FECC00!important;
 }
 
 .ant-menu.ant-menu-dark .ant-menu-item-selected.customclass {
-  background:  #596061;
-  color: white; 
-  
+  background:  #FECC00;
+  color: black; 
+}
 
+
+.ant-menu.ant-menu-dark .customclass, .ant-menu.ant-menu-dark .customclass:hover {
+  color: black; 
+}
+
+.logout {
+  color: black !important;
+  height: 35px !important;
+}
+
+
+.logout:hover {
+  color: rgba(200,0,0, 0.7) !important;
 }

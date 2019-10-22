@@ -35,12 +35,12 @@ export default class NavBar extends Component {
         });
       }
      
-    //   criaracesso = () => { 
-    //     this.setState({nav: '/criaracesso'});
-    //   } 
-    //   visualizaracessosusuario = () => { 
-    //     this.setState({nav: '/useraccesslist/'+getUserId()});
-    //   }
+      criaracesso = () => { 
+        this.setState({nav: '/criaracesso'});
+      } 
+      visualizaracessosusuario = () => { 
+        this.setState({nav: '/useraccesslist/'+getUserId()});
+      }
       signout = () => {
         let hide = message.loading('Fazendo logout..', 0);
     
@@ -63,24 +63,24 @@ export default class NavBar extends Component {
             
             <Layout className="layout">
                  
-            <Header                     style={{ lineHeight: '80px' ,backgroundColor:'#555555' }}
+            <Header                     style={{ lineHeight: '100px' ,backgroundColor:'#e6e8e8' }}
 >
 
                 <div className="logo">
-                    <img src= {logo}  alt="logo" style={{float:'left', padding:10}}/>
+                    <img src= {logo}  alt="logo" style={{float:'left', padding:5}}/>
                 </div>
 
                 <Menu
                     theme="dark"
                     mode="horizontal"
                     defaultSelectedKeys={['1']}
-                    style={{ lineHeight: '64px' ,backgroundColor:'#555555', }}
+                    style={{ lineHeight: '80px' ,backgroundColor:'#e6e8e8' }}
                 >
                     
-                    <Menu.Item key="2" className="customclass"   >Acessos</Menu.Item>
+                    {/* <Menu.Item key="2" className="customclass">Acessos</Menu.Item>
                     
-                    <Menu.Item key="3" className="customclass">Caledário</Menu.Item>
-                    <Button style={{float: 'right'}} type="link" shape="circle" ghost size="large" icon="logout" onClick={this.signout}>
+                    <Menu.Item key="3" className="customclass">Caledário</Menu.Item> */}
+                    <Button style={{float: 'right'}} className="button" type="link" shape="circle" ghost size="large" icon="logout" onClick={this.signout}>
                     </Button>
                 </Menu>
             </Header>
