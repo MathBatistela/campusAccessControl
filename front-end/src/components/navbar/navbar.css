@@ -89,3 +89,10 @@
   background: #ff8d0052 !important;
   color: #ff8d00 !important;
 }
+
+.ant-menu.ant-menu-dark .ant-menu-item-selected.customclass {
+  background:  #596061;
+  color: white; 
+  
+
+}
